@@ -1,24 +1,98 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_7" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Assignment7_NavBarAnimationCopy" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8et-I7-WAA">
+                                <rect key="frame" x="0.0" y="0.0" width="428" height="88"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8vE-bC-IHD">
+                                        <rect key="frame" x="360" y="32" width="46" height="56"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="+">
+                                            <fontDescription key="titleFontDescription" type="system" pointSize="35"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="addButtoPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="frE-lT-Diz"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" red="0.8666666666666667" green="0.8666666666666667" blue="0.8666666666666667" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstItem="8vE-bC-IHD" firstAttribute="top" secondItem="8et-I7-WAA" secondAttribute="top" constant="32" id="A0z-oZ-ge8"/>
+                                    <constraint firstAttribute="height" constant="88" id="R1x-8k-YZV"/>
+                                    <constraint firstAttribute="trailing" secondItem="8vE-bC-IHD" secondAttribute="trailing" constant="22" id="Tg1-78-Ved"/>
+                                </constraints>
+                            </view>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="zpK-Z5-7im" customClass="FoodTableView" customModule="Assignment7_NavBarAnimationCopy" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="85" width="428" height="841"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <color key="separatorColor" systemColor="systemGray2Color"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="FoodCell" textLabel="zyp-95-Rrt" style="IBUITableViewCellStyleDefault" id="wX0-OH-xAY">
+                                        <rect key="frame" x="0.0" y="44.666666030883789" width="428" height="62.666667938232422"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="wX0-OH-xAY" id="TH6-rp-Owx">
+                                            <rect key="frame" x="0.0" y="0.0" width="428" height="62.666667938232422"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="zyp-95-Rrt">
+                                                    <rect key="frame" x="20" y="0.0" width="388" height="62.666667938232422"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="26"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="zpK-Z5-7im" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="0Qs-w1-GV7"/>
+                            <constraint firstAttribute="bottom" secondItem="zpK-Z5-7im" secondAttribute="bottom" id="7i6-aN-McW"/>
+                            <constraint firstItem="8et-I7-WAA" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="O6F-gL-FLp"/>
+                            <constraint firstItem="zpK-Z5-7im" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="41" id="PMg-Yb-20l"/>
+                            <constraint firstItem="8et-I7-WAA" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="ax6-M8-vvq"/>
+                            <constraint firstItem="zpK-Z5-7im" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="hz8-ro-W5B"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="top" secondItem="8et-I7-WAA" secondAttribute="top" constant="44" id="pCa-er-n9K"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="addButton" destination="8vE-bC-IHD" id="yZn-F2-qVA"/>
+                        <outlet property="navigationBar" destination="8et-I7-WAA" id="ids-nS-tO5"/>
+                        <outlet property="navigationBarConstraint" destination="R1x-8k-YZV" id="EUj-S3-xNa"/>
+                        <outlet property="tableView" destination="zpK-Z5-7im" id="6xO-35-Y1M"/>
+                        <outlet property="tableViewConstraint" destination="PMg-Yb-20l" id="VWA-op-oXf"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="-130" y="80"/>
         </scene>
     </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGray2Color">
+            <color red="0.68235294117647061" green="0.68235294117647061" blue="0.69803921568627447" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
 </document>

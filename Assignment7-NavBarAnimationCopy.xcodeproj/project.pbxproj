@@ -9,21 +9,25 @@
 /* Begin PBXBuildFile section */
 		D95977F42832E2F8008B0092 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D95977F32832E2F8008B0092 /* AppDelegate.swift */; };
 		D95977F62832E2F8008B0092 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D95977F52832E2F8008B0092 /* SceneDelegate.swift */; };
-		D95977F82832E2F8008B0092 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D95977F72832E2F8008B0092 /* ViewController.swift */; };
 		D95977FB2832E2F8008B0092 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D95977F92832E2F8008B0092 /* Main.storyboard */; };
 		D95977FD2832E2F9008B0092 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D95977FC2832E2F9008B0092 /* Assets.xcassets */; };
 		D95978002832E2F9008B0092 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D95977FE2832E2F9008B0092 /* LaunchScreen.storyboard */; };
+		D959780A2832E635008B0092 /* Food.swift in Sources */ = {isa = PBXBuildFile; fileRef = D95978092832E635008B0092 /* Food.swift */; };
+		D95978122832F51B008B0092 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D95978112832F51B008B0092 /* ViewController.swift */; };
+		D9F27D1B2834182B0076348F /* FoodTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9F27D1A2834182B0076348F /* FoodTableView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		D95977F02832E2F8008B0092 /* Assignment7-NavBarAnimation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Assignment7-NavBarAnimation.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D95977F02832E2F8008B0092 /* Assignment7-NavBarAnimationCopy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Assignment7-NavBarAnimationCopy.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D95977F32832E2F8008B0092 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D95977F52832E2F8008B0092 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		D95977F72832E2F8008B0092 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		D95977FA2832E2F8008B0092 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D95977FC2832E2F9008B0092 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D95977FF2832E2F9008B0092 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D95978012832E2F9008B0092 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D95978092832E635008B0092 /* Food.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Food.swift; sourceTree = "<group>"; };
+		D95978112832F51B008B0092 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ViewController.swift; path = ../ViewController.swift; sourceTree = "<group>"; };
+		D9F27D1A2834182B0076348F /* FoodTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodTableView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -48,7 +52,7 @@
 		D95977F12832E2F8008B0092 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				D95977F02832E2F8008B0092 /* Assignment7-NavBarAnimation.app */,
+				D95977F02832E2F8008B0092 /* Assignment7-NavBarAnimationCopy.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -56,23 +60,57 @@
 		D95977F22832E2F8008B0092 /* Assignment7-NavBarAnimation */ = {
 			isa = PBXGroup;
 			children = (
-				D95977F32832E2F8008B0092 /* AppDelegate.swift */,
-				D95977F52832E2F8008B0092 /* SceneDelegate.swift */,
-				D95977F72832E2F8008B0092 /* ViewController.swift */,
+				D9F27D1E28341AE50076348F /* Supporting Files */,
+				D9F27D1D28341AD50076348F /* Model */,
+				D9F27D1C28341ACA0076348F /* Views */,
+				D959780B2832EAFE008B0092 /* View Controllers */,
 				D95977F92832E2F8008B0092 /* Main.storyboard */,
-				D95977FC2832E2F9008B0092 /* Assets.xcassets */,
-				D95977FE2832E2F9008B0092 /* LaunchScreen.storyboard */,
 				D95978012832E2F9008B0092 /* Info.plist */,
 			);
 			path = "Assignment7-NavBarAnimation";
 			sourceTree = "<group>";
 		};
+		D959780B2832EAFE008B0092 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				D95978112832F51B008B0092 /* ViewController.swift */,
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		D9F27D1C28341ACA0076348F /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				D9F27D1A2834182B0076348F /* FoodTableView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		D9F27D1D28341AD50076348F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				D95978092832E635008B0092 /* Food.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		D9F27D1E28341AE50076348F /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D95977F52832E2F8008B0092 /* SceneDelegate.swift */,
+				D95977FC2832E2F9008B0092 /* Assets.xcassets */,
+				D95977F32832E2F8008B0092 /* AppDelegate.swift */,
+				D95977FE2832E2F9008B0092 /* LaunchScreen.storyboard */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		D95977EF2832E2F8008B0092 /* Assignment7-NavBarAnimation */ = {
+		D95977EF2832E2F8008B0092 /* Assignment7-NavBarAnimationCopy */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = D95978042832E2F9008B0092 /* Build configuration list for PBXNativeTarget "Assignment7-NavBarAnimation" */;
+			buildConfigurationList = D95978042832E2F9008B0092 /* Build configuration list for PBXNativeTarget "Assignment7-NavBarAnimationCopy" */;
 			buildPhases = (
 				D95977EC2832E2F8008B0092 /* Sources */,
 				D95977ED2832E2F8008B0092 /* Frameworks */,
@@ -82,9 +120,9 @@
 			);
 			dependencies = (
 			);
-			name = "Assignment7-NavBarAnimation";
+			name = "Assignment7-NavBarAnimationCopy";
 			productName = "Assignment7-NavBarAnimation";
-			productReference = D95977F02832E2F8008B0092 /* Assignment7-NavBarAnimation.app */;
+			productReference = D95977F02832E2F8008B0092 /* Assignment7-NavBarAnimationCopy.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -102,7 +140,7 @@
 					};
 				};
 			};
-			buildConfigurationList = D95977EB2832E2F8008B0092 /* Build configuration list for PBXProject "Assignment7-NavBarAnimation" */;
+			buildConfigurationList = D95977EB2832E2F8008B0092 /* Build configuration list for PBXProject "Assignment7-NavBarAnimationCopy" */;
 			compatibilityVersion = "Xcode 13.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -115,7 +153,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				D95977EF2832E2F8008B0092 /* Assignment7-NavBarAnimation */,
+				D95977EF2832E2F8008B0092 /* Assignment7-NavBarAnimationCopy */,
 			);
 		};
 /* End PBXProject section */
@@ -138,8 +176,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D95977F82832E2F8008B0092 /* ViewController.swift in Sources */,
 				D95977F42832E2F8008B0092 /* AppDelegate.swift in Sources */,
+				D959780A2832E635008B0092 /* Food.swift in Sources */,
+				D9F27D1B2834182B0076348F /* FoodTableView.swift in Sources */,
+				D95978122832F51B008B0092 /* ViewController.swift in Sources */,
 				D95977F62832E2F8008B0092 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -287,6 +327,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = S4P7C76N9C;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Assignment7-NavBarAnimation/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -299,7 +340,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.example.Assignment7-NavBarAnimation";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.example.Assignment7-NavBarAnimationCopy";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -314,6 +355,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = S4P7C76N9C;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Assignment7-NavBarAnimation/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -326,7 +368,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.example.Assignment7-NavBarAnimation";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.example.Assignment7-NavBarAnimationCopy";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -337,7 +379,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		D95977EB2832E2F8008B0092 /* Build configuration list for PBXProject "Assignment7-NavBarAnimation" */ = {
+		D95977EB2832E2F8008B0092 /* Build configuration list for PBXProject "Assignment7-NavBarAnimationCopy" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				D95978022832E2F9008B0092 /* Debug */,
@@ -346,7 +388,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		D95978042832E2F9008B0092 /* Build configuration list for PBXNativeTarget "Assignment7-NavBarAnimation" */ = {
+		D95978042832E2F9008B0092 /* Build configuration list for PBXNativeTarget "Assignment7-NavBarAnimationCopy" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				D95978052832E2F9008B0092 /* Debug */,
